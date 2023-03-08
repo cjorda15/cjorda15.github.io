@@ -2,21 +2,31 @@
 main:
   - title: "Publications"
     url: /publications/
+    tab_title: "wooooo"
 
   - title: "Talks"
     url: /talks/    
+    tab_title: "ffff"
+
 
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/ 
+    tab_title: "sdfsdfasdf"
+
     
   - title: "Portfolio"
     url: /portfolio/
+    tab_title: "sdfsdaasdfasdfsadfasdfsdafasdf"
+
         
   - title: "Blog Posts"
     url: /year-archive/
+    tab_title: "ssasdf"
     
   - title: "CV"
     url: /cv/
+    tab_title: "2222"    
     
   - title: "Guide"
     url: /markdown/
+    tab_title: "3333"
