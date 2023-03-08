@@ -5,7 +5,7 @@
 " " | append: site.title %} {% endif %} {% if seo_title %} {% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %} {% endif %} {% if site.url %} {% assign canonical_url = page.url | replace: "index.html", "" | prepend:
 site.url %} {% endif %}
 
-<title>TEST!!!</title>
+<title>{{ seo_title | default: page.tab_title }}</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %} {% if seo_description %} {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %} {% endif %} {% assign
 seo_author = page.author | default: page.author[0] | default: site.author[0] %} {% if seo_author %} {% if seo_author.twitter %} {% assign seo_author_twitter = seo_author.twitter %} {% else %} {% if site.data.authors and site.data.authors[seo_author] %}
